@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gray;
+}
+.container{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    margin: 1em auto 1em auto;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+    padding-bottom: 50px;
+}
+/* FIRST COLUMN */
+.col1{
+    width: 35%;
+    background-color: rgb(6, 97, 233);
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    margin-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+li,i{
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.col1-row1{
+    height:30vw;
+    background-color: red;
+    margin-bottom: 10%;
+}
+.col1-row1-img{
+    width: 90%;
+    height: 25vw;
+    margin: 1em 1em 1em .8em;
+    border-radius: 15em;
+}
+.col1-row2{
+    height:20%;
+    margin-left: 5%;
+}
+.col1-row3{
+    height:20%;
+    margin-left: 5%;
+}
+.col1-row4{
+    height:20%;
+    margin-left: 5%;
+}
+/* SECOND COLUMN OF RESUME */
+.col2{
+    width: 65%;
+    margin:1em 2% 1em 5%;
+}
+.col2-row1{
+    display: flex;
+    justify-content: center;
+    height: 20%;
+}
+.col2-row1 hr{
+    width: 50%;
+    margin-left: 25%;
+    height: 1px;
+    background-color: black;
+}
+.col2-row2{
+    height: 20%;
+    margin-bottom: 5%;
+}
+@media screen and (max-width:500px) {
+    .col1-row3{
+        height: 25%;
+    }
+    .col2-row1{
+        margin-left: 25%;
+    }
+    .col2-row1 hr{
+        margin-left: 10%;
+    }
+    .col2-row2{
+        margin-bottom: 20%;
+        height: 15%;
+    }
+    .col2-row4{
+        margin-top: 30%;
+    }
+    @media screen and (max-width:410px){
+        .col2-row4{
+            margin-top: 60%;
+        }
+    }
+}
+.col2-row3{
+    height: 45%;
+    margin-bottom: 15%;
+}
+.col2-row3-last{
+    display: none;    
+}
+.col2-row4-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.data{
+    margin-bottom: 10%;
+}
+@media screen and (min-width:600px) {
+    
+    .col2-row1{
+        height: 15%;
+    }
+    .col2-row2{
+        height:15% ;
+    }
+    .col2-row3{
+        height: 50%;
+        margin-bottom: 10%;
+    }
+    .col2-row3-last{
+        display: block;
+    }
+    .col2-row4{
+        height: 15%;
+    }
+}
+
